@@ -1,0 +1,31 @@
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  padding: 0px;
+  background-color: rgb(153, 150, 150);
+}
+
+li {
+  padding: 10px 15px;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 20px;
+  color: black;
+}
+
+.active {
+  background-color: #666;
+}
+
+li:hover {
+  background-color: black;
+  color: white;
+}
+
+a:hover {
+  color: white;
+}

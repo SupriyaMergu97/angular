@@ -1,0 +1,26 @@
+<table>
+  <thead>
+    <th>CITY</th>
+    <th>ADMIN</th>
+    <th>COUNTRY</th>
+    <th>POPULATION_PROPER</th>
+    <th>ISO2</th>
+    <th>CAPITAL</th>
+    <th>LAT</th>
+    <th>LNG</th>
+    <th>POPULATION</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let state of states">
+      <td><a [routerLink]="state.city">{{state.city}}</a></td>
+      <td>{{state.admin}}</td>
+      <td>{{state.country}}</td>
+      <td>{{state.population_proper}}</td>
+      <td>{{state.iso2}}</td>
+      <td>{{state.capital}}</td>
+      <td>{{state.lat}}</td>
+      <td>{{state.lng}}</td>
+      <td>{{state.population}}</td>
+    </tr>
+  </tbody>
+</table>

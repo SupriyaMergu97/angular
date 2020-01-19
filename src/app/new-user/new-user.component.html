@@ -1,0 +1,21 @@
+<form [formGroup]="regForm" class="form-horizontal" (ngSubmit)="onSubmit()">
+  <div class="form-group" [ngClass]="{'has-error':regForm.get('firstName').errors}">
+    <input type="text" class="form-control" placeholder="First Name" formControlName="firstName" aria-label="Username"
+      aria-describedby="basic-addon1">
+    <!-- <input placeholder="First Name" formControlName="firstName" type="text" class="form-control"> -->
+    <span class="text-danger" *ngIf="regForm.controls.firstName.error && ">Please enter first Name</span>
+  </div>
+  <div>
+    <input placeholder="Last Name" formControlName="lastName" class="form-control" type="text">
+  </div>
+  <div>
+    <input placeholder="E-mail Id" formControlName="mailId" class="form-control" type="email">
+  </div>
+  <div>
+    <input placeholder="PhNo." formControlName="phNo" class="form-control" type="text">
+  </div>
+  <div>
+    <button class="btn btn-success" type="submit">Register</button>
+  </div>
+  <div>Hello : {{regForm.get('firstName').errors | json}} </div>
+</form>

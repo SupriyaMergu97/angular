@@ -1,0 +1,13 @@
+<div class="login">
+<div>
+  <input (blur)="setInfo($event,'uname')" placeholder="User Name">
+</div>
+<div>
+  <input (blur)="setInfo($event,'pword')" placeholder="Password">
+</div>
+<div><button (click)="info()">Login</button></div>
+<div *ngIf="show">
+  <p>User Name : {{login.uname}}</p>
+  <p>Password : {{login.pword}}</p>
+</div>
+</div>

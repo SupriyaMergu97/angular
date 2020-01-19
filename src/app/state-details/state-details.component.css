@@ -1,0 +1,9 @@
+td:first-child{
+    font-weight: 600;
+}
+td{
+    border: 1px solid black;
+}
+table{
+    margin-left: 35%;
+}

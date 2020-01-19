@@ -1,0 +1,9 @@
+td:first-child{
+    font-weight: 600;
+}
+td{
+    padding: 5px;
+}
+table{
+    margin-left: 10px;
+}
